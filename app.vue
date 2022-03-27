@@ -12,3 +12,6 @@ if (route.params.group === "admins" && !route.params.id) {
   console.log("Warning! Make sure user is authenticated!");
 }
 </script>
+<style>
+@import "element-plus/dist/index.css";
+</style>
