@@ -2,5 +2,5 @@ import { defineNuxtConfig } from 'nuxt3'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-    plugins: [{ src: "@/plugins/element-plus", ssr: true }],
+    plugins: [{ src: "@/plugins/element-plus", ssr: false }],
 })
