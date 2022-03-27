@@ -1,8 +1,11 @@
 <template>
-  <el-input v-model="input" placeholder="Please input" />
+  <div style="text-align: center">
+    <h1>试试按钮样式</h1>
+    <van-button type="primary">主要按钮</van-button>
+  </div>
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
-const input = ref('')
+import { ref } from "vue";
+const input = ref("");
 </script>

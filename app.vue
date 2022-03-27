@@ -13,5 +13,4 @@ if (route.params.group === "admins" && !route.params.id) {
 }
 </script>
 <style>
-@import "element-plus/dist/index.css";
 </style>
