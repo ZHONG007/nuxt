@@ -17,7 +17,7 @@ import { defineNuxtConfig } from 'nuxt3'
 // })
 
 export default defineNuxtConfig({
-    plugins: [{ src: '@/plugins/element-ui', ssr: false }],
+    plugins: [{ src: '@/plugins/element-plus', ssr: false }],
     css: [
         'element-plus/dist/index.css'
     ],
