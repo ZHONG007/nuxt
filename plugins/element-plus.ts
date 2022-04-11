@@ -1,9 +1,7 @@
-import { defineNuxtPlugin } from '#app';
-import vant from 'vant';
-import 'vant/lib/index.css';
 
+import { defineNuxtPlugin } from '#app'
+import ElementPlus from 'element-plus/dist/index.full'
+import 'element-plus/dist/index.css';
 export default defineNuxtPlugin(nuxtApp => {
-    // Doing something with nuxtApp
-    nuxtApp.vueApp.use(vant)
-  })
-
+  nuxtApp.vueApp.use(ElementPlus, {size: 'large'})
+})

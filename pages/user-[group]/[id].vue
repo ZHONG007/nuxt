@@ -1,13 +1,28 @@
 <template>
-  <p>{{ $route.params.group }} - {{ $route.params.id }}</p>
-    <div style="text-align: center">
-    <h1>试试按钮样dsds式</h1>
-    <van-button type="primary" @click="updateInput">主要按钮</van-button>
-  </div>
+  <NuxtLayout name="default">
+    <p>{{ $route.params.group }} - {{ $route.params.id }}</p>
+    {{ user }}
+  </NuxtLayout>
 </template>
 
+<script>
+import { defineComponent } from "vue";
+
+export default defineComponent({
+  layout: false,
+});
+</script>
+                                          
 <script setup>
-definePageMeta({
-  title: "My home page",
+import { ref, inject, onMounted } from "vue";
+const user = inject("key");
+function changeit(){
+  user.name = "dehua";
+  user.age++;
+}
+
+onMounted(() => {
+  console.log("mounted about");
+  console.log(user);
 });
 </script>
