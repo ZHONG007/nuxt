@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from 'nuxt3'
+//import { defineNuxtConfig } from 'nuxt3'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 // export default defineNuxtConfig({
@@ -16,9 +16,19 @@ import { defineNuxtConfig } from 'nuxt3'
 //     },
 // })
 
+// export default defineNuxtConfig({
+//     plugins: [{ src: '@/plugins/element-plus', ssr: false }],
+//     css: [
+//         'element-plus/dist/index.css'
+//     ],
+// })
+import { defineNuxtConfig } from 'nuxt3'
+
+// https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-    plugins: [{ src: '@/plugins/element-plus', ssr: false }],
-    css: [
-        'element-plus/dist/index.css'
-    ],
+    build: {
+        transpile: [
+            'vant'
+        ],
+      },
 })
